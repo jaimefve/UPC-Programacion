@@ -123,5 +123,16 @@ public class Incidencia {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Incidencia{" +
+                "codincidencia='" + codincidencia + '\'' +
+                ", fechaApertura='" + fechaApertura + '\'' +
+                ", listaUsuario=" + listaUsuario +
+                ", listaResponsable=" + listaResponsable +
+                ", listaCategoria=" + listaCategoria +
+                ", estado='" + estado + '\'' +
+                //", la prioridad es='" + calcularValorPrioridad() + '\'' +
+                '}';
     }
+}

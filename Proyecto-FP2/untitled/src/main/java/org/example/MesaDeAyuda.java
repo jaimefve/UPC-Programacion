@@ -1,14 +1,27 @@
 package org.example;
+import java.sql.SQLOutput;
+import java.util.List;
+import java.util.ArrayList;
 
 public class MesaDeAyuda {
-    //atributo privado de la clase asociada que voy a agregar.
-    private Incidencia[] incidencia = new Incidencia[5];
-    private int numIncidentes = 0;
+    private String ticket;
 
+    private List<Incidencia> listaincidencia;
 
-    //Obtener la cantidad de incidentes
-    public void addIncidencia(Incidencia incidencia){
-        
+    public MesaDeAyuda(String ticket) {
+        this.ticket = ticket;
+        this.listaincidencia = new ArrayList<>();
+    }
+    //Metodo para agregar incidentes
+    public void agregarIncidente(Incidencia i){
+        listaincidencia.add(i);
+    }
+
+    // Listar Incidencias
+    public void listarIncidencias(){
+        for(Incidencia i:listaincidencia){
+            System.out.println(i);
+        }
     }
 
 }

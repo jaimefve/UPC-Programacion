@@ -15,24 +15,12 @@ public class Responsable {
         return codResponsable;
     }
 
-    public void setCodResponsable(String codResponsable) {
-        this.codResponsable = codResponsable;
-    }
-
     public String getNoResponsable() {
         return noResponsable;
     }
 
-    public void setNoResponsable(String noResponsable) {
-        this.noResponsable = noResponsable;
-    }
-
     public String getCargo() {
         return cargo;
-    }
-
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
     }
 
     @Override
